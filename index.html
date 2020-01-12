@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+    <link rel="stylesheet" href="stylo.css">
+</head>
+<body>
+    <form id ="formulario">
+        <!-- barra de progresso -->
+        <ul id ="progresso-barra">
+            <li class="active">Criando Conta</li>
+            <li>Perfil Social</li>
+            <li>Detalhes da Personalidade</li>
+        </ul>
+        <fieldset>
+            <!-- campos -->
+            <h2 class="titulo">Criando a Conta</h2>
+            <h3 class="subtitulo">1 degrau</h3>
+        
+            <input type="text" name="email" placeholder="Email" />
+            <input type="password" name="pass" placeholder="Password" />
+            <input type="password" name="Cpass" placeholder="Confirme Password" />
+            <input type="button" name="proximo" class="proximo acao-botao" value="Proximo" />
+        </fieldset>
+        <fieldset>
+            <h2 class="titulo">Perfil Social</h2>
+            <h3 class="subtitulo">Sua presença na rede social</h3>
+            <input type="text" name="twitter" placeholder="Twitter" />
+            <input type="text" name="facebook" placeholder="Facebook" />
+            <input type="text" name="Google Plus" placeholder="gplus" />
+            <input type="button" name="anterior" class="anterior acao-botao" value="Anterior" />
+            <input type="button" name="proximo" class="proximo acao-botao" value="Proximo" />
+        </fieldset>
+        <fieldset>
+            <h2 class="titulo">Detalhes da Personalidade</h2>
+            <h3 class="subtitulo">Nós nunca iremos vendê-lo</h3>
+            <input type="text" name="Pname" placeholder="Primeiro Nome" />
+            <input type="text" name="Sname" placeholder="Ultimo Nome" />
+            <input type="text" name="telefone" placeholder="Telefone" />
+            <textarea name="address" placeholder="Endereco"></textarea>
+            <input type="button" name="anterior" class="anterior acao-botao" value="Anterior" />
+            <input type="submit" name="submit" class="submit acao-botao" value="Submit" />
+        </fieldset>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
